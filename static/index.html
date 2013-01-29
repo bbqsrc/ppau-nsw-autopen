@@ -23,6 +23,8 @@
   </head>
   <body>
     <noscript>This form requires JavaScript to be filled out correctly.</noscript>
+    <div>This demo generates a PDF with the data entered here prefilled onto
+      the NSWEC membership form PDF. No data is stored on the server.</div>
     <div class='container' style="display: none">
       <form method='post'>
         <fieldset>
@@ -50,6 +52,7 @@
               <label class="required control-label" for="date_of_birth">Date of Birth</label>
               <div class="controls">
                 <input required class="span12" type="text"
+                placeholder="dd/mm/yyyy"
                 pattern="([0-2]?\d|3[01])/(0?\d|1[012])/(19|20)\d\d" id="date_of_birth" name="date_of_birth">
               </div>
             </div>
